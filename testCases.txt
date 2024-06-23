@@ -1,0 +1,61 @@
+// Terminology:
+// n = Length of one segment of codeword.
+// k = Length of one segment of the original message.
+// evalPts = Evaluation points are k points in the range [0..n-1] for evaluation of systematic codewords. 
+// Evaluation points input is not mandatory as it has a default value of [0..k-1].
+// srccol = Source Column of Parity Generator Matrix.
+// destcol = Destination Column of Parity Generator Matrix.
+// Moving columns is also optional.
+// 0 <= srccol, destcol <= n-1.
+// ogmsg = Orginal Message.
+// Orginal Message has a length which is a positive multiple of k and all the elements of ogmsg are from the Field [0..n-1].
+
+// maxerrs = max correctable erros in each segments of length n inside the codeword.
+// nerrs = max no. of erros that we want to introduce in each segments of length n inside the codeword. These segments start
+// from the very first element of the codeword.
+// nerrs <= maxerrs
+
+
+// Some Correct Test Cases are:
+#1
+n = 7
+k = 4
+evalPts = 2 3 4 5 
+srccol = 2
+destcol = 6
+ogmsg = 0 1 2 3 4 5 6 1 
+calculated maxerrs = (n-k)/2 = (7-4)/2 = 1
+nerrs = 1
+
+#2
+n = 17
+k = 5
+evalPts = 3 6 7 9 10
+ogmsg = 12 3 11 9 1 0 2 4 6 8 
+calculated maxerrs = (n-k)/2 = (17-5)/2 = 6
+nerrs = 3
+
+#3
+n = 47
+k = 21
+ogmsg = 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 
+calculated maxerrs = (n-k)/2 = (47-21)/2 = 13
+nerrs = 12
+
+#4
+n = 443
+k = 5
+ogmsg = 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 
+calculated maxerrs = (n-k)/2 = (443-200)/2 = 121
+nerrs = 100
+
+
+Note: 
+1. On the 4th test case it runs but it takes some time.
+2. This application runs well for the inputs for which we don't have memory limit exceeded. We are using 
+standard C++ data structures which do have some upper bound on memory.
+3. In this application we have used two main algorithms:
+a) Lagrangian Interpolation : T.C. = O(n^2) where n is the no. of evaluations given.
+b) Gaussian Elimination : T.C. = O(n^3) where n is the size of the Field.
+4. On large test cases we might get some unwanted outputs.
+

@@ -1,0 +1,4 @@
+#ifndef MYMATRIXWIDGET_H
+#define MYMATRIXWIDGET_H
+
+#endif // MYMATRIXWIDGET_H
