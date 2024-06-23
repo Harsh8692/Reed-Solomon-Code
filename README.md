@@ -49,4 +49,15 @@ To use the Reed-Solomon encoding and decoding in this QT C++ application, please
 Using this input order ensures that the Reed-Solomon encoding and decoding process is clear and easy to follow for the users of our QT C++ application.
 
 ## Screenshots of the Application
+![Screenshot 1](img1.png)
+![Screenshot 2](img2.png)
+![Screenshot 3](img3.png)
+![Screenshot 4](img4.png)
 
+## Credits:
+
+The following resources were used in the development of this application:
+
+- [Math &cap; Programming](https://jeremykun.com/2014/03/24/reed-solomon-codes-part-1/)
+- [Wikipedia: RS Code](https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction)
+- [Wikipedia: Berlekamp-Welch Algorithm](https://en.wikipedia.org/wiki/Berlekamp%E2%80%93Welch_algorithm)
