@@ -58,6 +58,6 @@ Using this input order ensures that the Reed-Solomon encoding and decoding proce
 
 The following resources were used in the development of this application:
 
-- [Math &cap; Programming](https://jeremykun.com/2014/03/24/reed-solomon-codes-part-1/)
+- [Math &cap; Programming](https://www.jeremykun.com/2015/09/07/welch-berlekamp/#a-simple-example)
 - [Wikipedia: RS Code](https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction)
 - [Wikipedia: Berlekamp-Welch Algorithm](https://en.wikipedia.org/wiki/Berlekamp%E2%80%93Welch_algorithm)
