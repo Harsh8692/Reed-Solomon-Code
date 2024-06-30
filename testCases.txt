@@ -1,10 +1,10 @@
 // Terminology:
-// n = Length of one segment of codeword.
-// k = Length of one segment of the original message.
+// n = Length of one segment of codeword. n should be a prime number.
+// k = Length of one segment of the original message. k should be greater than 0 and less than n.
 // evalPts = Evaluation points are k points in the range [0..n-1] for evaluation of systematic codewords. 
 // Evaluation points input is not mandatory as it has a default value of [0..k-1].
-// srccol = Source Column of Parity Generator Matrix.
-// destcol = Destination Column of Parity Generator Matrix.
+// srccol = Source Column of Parity Generator Matrix. It should lie between 0 to n-1 (both inclusive).
+// destcol = Destination Column of Parity Generator Matrix. It should lie between 0 to n-1 (both inclusive).
 // Moving columns is also optional.
 // 0 <= srccol, destcol <= n-1.
 // ogmsg = Orginal Message.
