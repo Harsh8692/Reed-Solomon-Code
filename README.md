@@ -5,19 +5,19 @@ This is my course project of CS425(Algebraic Coding Theory &amp; Cryptology) on 
 To use the Reed-Solomon encoding and decoding in this QT C++ application, please follow the input order below:
 
 1. **n (Length of one segment of codeword)**:
-   - Enter the length of one segment of the codeword.
+   - Enter the length of one segment of the codeword. The value of \(n\) should be prime.
    
 2. **k (Length of one segment of the original message)**:
-   - Enter the length of one segment of the original message.
+   - Enter the length of one segment of the original message. The value of \(k\) should be greater than 0 and less than \(n\).
 
 3. **evalPts (Evaluation points)**:
    - Enter the evaluation points. If not provided, the default is \([0..k-1]\).
 
 4. **srccol (Source Column of Parity Generator Matrix)**:
-   - (Optional) Enter the source column index of the parity generator matrix to move.
+   - (Optional) Enter the source column index of the parity generator matrix to move. It should lie between 0 to \(n-1\) \(both inclusive\).
    
 5. **destcol (Destination Column of Parity Generator Matrix)**:
-   - (Optional) Enter the destination column index of the parity generator matrix to move.
+   - (Optional) Enter the destination column index of the parity generator matrix to move. It should lie between 0 to \(n-1\) \(both inclusive\).
    
 6. **ogmsg (Original Message)**:
    - Enter the original message. The length of the message should be a positive multiple of \(k\), and all elements should be in the field \([0..n-1]\).
